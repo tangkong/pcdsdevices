@@ -234,6 +234,7 @@ class PIM(Diagnostic):
     device_class.default = 'pcdsdevices.device_types.PIM'
     kwargs = deepcopy(Diagnostic.kwargs)
     kwargs.default['prefix_det'] = "{{prefix_det}}"
+    kwargs.default['prefix_det'] = "{{prefix_detss}}"
 
 
 class IPM(Diagnostic):
