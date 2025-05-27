@@ -1,10 +1,13 @@
-{% set package_name = "pcdsdevices" %}
-{% set import_name = "pcdsdevices" %}
-{% set version = load_file_regex(load_file=os.path.join(import_name, "_version.py"), regex_pattern=".*version = '(\S+)'").group(1) %}
+# yaml-language-server: $schema=https://raw.githubusercontent.com/prefix-dev/recipe-format/main/schema.json
+
+context:
+  name: "pcdsdevices"
+  python_name: "pcdsdevices"
+  version: "v8.8.1"
 
 package:
-  name: {{ package_name }}
-  version : {{ version }}
+  name: "pcdsdevices"
+  version: ${{ version }}
 
 source:
   path: ..
@@ -12,7 +15,7 @@ source:
 build:
   number: 0
   noarch: python
-  script: {{ PYTHON }} -m pip install . -vv
+  script: pip install . -vv
 
 requirements:
   build:
@@ -37,19 +40,24 @@ requirements:
     - schema
     - scipy
     - sympy
-  run_constrained:
+  run_constraints:
     - pmgr >=2.0.2
     - typhos >=2.4.0
 
-test:
-  requires:
+tests:
+  - script:
     - pytest
-    - pytest-timeout
-    - typhos
-  imports:
-    - {{ import_name }}
+    requirements:
+      run:
+        - pytest
+        - pytest-timeout
+        - typhos
+    files:
+      source:
+        - pcdsdevices/
 
 about:
-  home: https://github.com/pcdshub/pcdsdevices
-  license: SLAC Open License
+  homepage: https://github.com/pcdshub/pcdsdevices
+  license: LicenseRef-SLACOpenLicense
+  license_file: LICENSE.md
   summary: IOC definitions for LCLS Beamline Devices
