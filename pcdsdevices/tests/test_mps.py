@@ -6,8 +6,9 @@ import pytest
 from ophyd import Device
 from ophyd.sim import make_fake_device
 
-from .. import mps as mps_module
-from ..mps import MPS, MPSLimits, mps_factory, must_be_known, must_be_out
+from pcdsdevices import mps as mps_module
+from pcdsdevices.mps import (MPS, MPSLimits, mps_factory, must_be_known,
+                             must_be_out)
 
 logger = logging.getLogger(__name__)
 

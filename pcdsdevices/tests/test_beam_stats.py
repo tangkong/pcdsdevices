@@ -3,10 +3,11 @@ import logging
 import pytest
 from ophyd.sim import make_fake_device
 
-from ..beam_stats import (LCLS, BeamEnergyRequest, BeamEnergyRequestACRWait,
-                          BeamEnergyRequestNoWait, BeamStats,
-                          FakeBeamEnergyRequestACRWait,
-                          FakeBeamEnergyRequestNoWait)
+from pcdsdevices.beam_stats import (LCLS, BeamEnergyRequest,
+                                    BeamEnergyRequestACRWait,
+                                    BeamEnergyRequestNoWait, BeamStats,
+                                    FakeBeamEnergyRequestACRWait,
+                                    FakeBeamEnergyRequestNoWait)
 
 logger = logging.getLogger(__name__)
 

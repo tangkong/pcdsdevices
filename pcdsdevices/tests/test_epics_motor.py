@@ -12,10 +12,11 @@ from ophyd.status import wait as status_wait
 from ophyd.utils.epics_pvs import AlarmSeverity, AlarmStatus
 from ophyd.utils.errors import LimitError
 
-from ..epics_motor import (IMS, MMC100, PMC100, BeckhoffAxis, EpicsMotor,
-                           EpicsMotorInterface, Motor, MotorDisabledError,
-                           Newport, OffsetIMSWithPreset, OffsetMotor,
-                           PCDSMotorBase)
+from pcdsdevices.epics_motor import (IMS, MMC100, PMC100, BeckhoffAxis,
+                                     EpicsMotor, EpicsMotorInterface, Motor,
+                                     MotorDisabledError, Newport,
+                                     OffsetIMSWithPreset, OffsetMotor,
+                                     PCDSMotorBase)
 
 logger = logging.getLogger(__name__)
 

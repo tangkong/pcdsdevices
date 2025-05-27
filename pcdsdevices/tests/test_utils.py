@@ -7,12 +7,13 @@ import pytest
 from ophyd import Component as Cpt
 from ophyd import Device, Signal
 
-from .. import utils
-from ..device import GroupDevice
-from ..pv_positioner import PVPositionerDone
-from ..utils import (move_subdevices_to_start, post_ophyds_to_elog,
-                     reorder_components, set_many, set_standard_ordering,
-                     sort_components_by_kind, sort_components_by_name)
+from pcdsdevices import utils
+from pcdsdevices.device import GroupDevice
+from pcdsdevices.pv_positioner import PVPositionerDone
+from pcdsdevices.utils import (move_subdevices_to_start, post_ophyds_to_elog,
+                               reorder_components, set_many,
+                               set_standard_ordering, sort_components_by_kind,
+                               sort_components_by_name)
 
 try:
     import pty

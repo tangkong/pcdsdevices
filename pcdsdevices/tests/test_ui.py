@@ -1,6 +1,6 @@
 from typhos.utils import DISPLAY_PATHS
 
-from ..ui import path
+from pcdsdevices.ui import path
 
 
 def test_ui_entry_point():

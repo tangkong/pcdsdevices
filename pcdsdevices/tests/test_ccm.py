@@ -5,8 +5,8 @@ import numpy as np
 import pytest
 from ophyd.sim import fake_device_cache, make_fake_device
 
-from .. import ccm
-from ..sim import FastMotor
+from pcdsdevices import ccm
+from pcdsdevices.sim import FastMotor
 
 logger = logging.getLogger(__name__)
 

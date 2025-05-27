@@ -1,7 +1,7 @@
 import pytest
 from ophyd.sim import make_fake_device
 
-from ..tpr import TPR_TAP_NS, TPR_TICK_NS, TimingMode, TprTrigger
+from pcdsdevices.tpr import TPR_TAP_NS, TPR_TICK_NS, TimingMode, TprTrigger
 
 
 @pytest.fixture(scope='function')

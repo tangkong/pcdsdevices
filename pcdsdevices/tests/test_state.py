@@ -8,10 +8,11 @@ from ophyd.device import Device
 from ophyd.signal import Signal
 from ophyd.sim import make_fake_device
 
-from ..device import UpdateComponent as UpCpt
-from ..state import (TWINCAT_MAX_STATES, PVStatePositioner, StatePositioner,
-                     StateRecordPositioner, StateStatus,
-                     TwinCATStatePositioner, state_config_dotted_names)
+from pcdsdevices.device import UpdateComponent as UpCpt
+from pcdsdevices.state import (TWINCAT_MAX_STATES, PVStatePositioner,
+                               StatePositioner, StateRecordPositioner,
+                               StateStatus, TwinCATStatePositioner,
+                               state_config_dotted_names)
 
 logger = logging.getLogger(__name__)
 

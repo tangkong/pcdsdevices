@@ -4,8 +4,9 @@ from unittest.mock import Mock
 import pytest
 from ophyd.sim import make_fake_device
 
-from ..inout import InOutRecordPositioner
-from ..ipm import IPIMB, IPM, IPM_IPIMB, IPM_Wave8, IPMMotion, IPMTarget, Wave8
+from pcdsdevices.inout import InOutRecordPositioner
+from pcdsdevices.ipm import (IPIMB, IPM, IPM_IPIMB, IPM_Wave8, IPMMotion,
+                             IPMTarget, Wave8)
 
 logger = logging.getLogger(__name__)
 

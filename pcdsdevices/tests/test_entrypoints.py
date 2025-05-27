@@ -7,7 +7,7 @@ import sys
 import pytest
 import typhos
 
-from .. import ui
+from pcdsdevices import ui
 
 
 @pytest.fixture(scope="session")

@@ -8,9 +8,11 @@ from ophyd.sim import make_fake_device
 from ophyd.status import StatusTimeoutError
 from ophyd.status import wait as wait_status
 
-from ..lxe import (LaserEnergyPlotContext, LaserEnergyPositioner, LaserTiming,
-                   LaserTimingCompensation, Lcls2LaserTiming)
-from ..utils import convert_unit
+from pcdsdevices.lxe import (LaserEnergyPlotContext, LaserEnergyPositioner,
+                             LaserTiming, LaserTimingCompensation,
+                             Lcls2LaserTiming)
+from pcdsdevices.utils import convert_unit
+
 from .conftest import MODULE_PATH
 
 logger = logging.getLogger(__name__)

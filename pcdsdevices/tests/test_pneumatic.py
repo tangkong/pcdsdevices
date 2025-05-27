@@ -1,7 +1,7 @@
 import pytest
 from ophyd.sim import make_fake_device
 
-from ..pneumatic import BeckhoffPneumatic
+from pcdsdevices.pneumatic import BeckhoffPneumatic
 
 
 @pytest.fixture(scope='function')

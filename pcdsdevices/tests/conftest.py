@@ -17,10 +17,10 @@ from epics import PV
 from ophyd.signal import LimitError, Signal
 from ophyd.sim import FakeEpicsSignal, make_fake_device
 
-from .. import analog_signals, lens, lxe
-from ..attenuator import MAX_FILTERS, Attenuator, _att_classes
-from ..device import UnrelatedComponent
-from ..interface import setup_preset_paths
+from pcdsdevices import analog_signals, lens, lxe
+from pcdsdevices.attenuator import MAX_FILTERS, Attenuator, _att_classes
+from pcdsdevices.device import UnrelatedComponent
+from pcdsdevices.interface import setup_preset_paths
 
 MODULE_PATH = Path(__file__).parent
 

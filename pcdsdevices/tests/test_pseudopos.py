@@ -8,10 +8,11 @@ from ophyd.device import Component as Cpt
 from ophyd.positioner import SoftPositioner
 from ophyd.sim import make_fake_device
 
-from ..pseudopos import (DelayBase, LookupTablePositioner, OffsetMotorBase,
-                         PseudoSingleInterface, SimDelayStage, SyncAxesBase,
-                         SyncAxis, SyncAxisOffsetMode, is_strictly_increasing)
-from ..sim import FastMotor
+from pcdsdevices.pseudopos import (DelayBase, LookupTablePositioner,
+                                   OffsetMotorBase, PseudoSingleInterface,
+                                   SimDelayStage, SyncAxesBase, SyncAxis,
+                                   SyncAxisOffsetMode, is_strictly_increasing)
+from pcdsdevices.sim import FastMotor
 
 logger = logging.getLogger(__name__)
 

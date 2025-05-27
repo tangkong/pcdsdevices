@@ -1,4 +1,4 @@
-from ..utils import convert_unit
+from pcdsdevices.utils import convert_unit
 
 
 def test_standard_units():

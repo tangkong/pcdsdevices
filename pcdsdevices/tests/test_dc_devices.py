@@ -3,7 +3,7 @@ import logging
 import pytest
 from ophyd.sim import make_fake_device
 
-from ..dc_devices import ICT
+from pcdsdevices.dc_devices import ICT
 
 logger = logging.getLogger(__name__)
 

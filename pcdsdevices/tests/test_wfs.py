@@ -2,7 +2,7 @@ import logging
 
 import pytest
 
-from ..wfs import WaveFrontSensorTarget
+from pcdsdevices.wfs import WaveFrontSensorTarget
 
 logger = logging.getLogger(__name__)
 

@@ -8,10 +8,11 @@ from pathlib import Path
 import ophyd
 import pytest
 
-from ..interface import (BaseInterface, TabCompletionHelperClass,
-                         get_engineering_mode, set_engineering_mode,
-                         setup_preset_paths)
-from ..sim import FastMotor, SlowMotor
+from pcdsdevices.interface import (BaseInterface, TabCompletionHelperClass,
+                                   get_engineering_mode, set_engineering_mode,
+                                   setup_preset_paths)
+from pcdsdevices.sim import FastMotor, SlowMotor
+
 from . import conftest
 
 try:

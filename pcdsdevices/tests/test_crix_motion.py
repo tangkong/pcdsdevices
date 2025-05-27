@@ -3,7 +3,7 @@ import functools
 import numpy as np
 import pytest
 
-from ..crix_motion import VLSOpticsSim
+from pcdsdevices.crix_motion import VLSOpticsSim
 
 # Calculation answers
 # Component = (mm, mrad)

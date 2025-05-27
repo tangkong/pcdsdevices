@@ -5,9 +5,8 @@ import pytest
 from ophyd.sim import ReadOnlyError, make_fake_device
 
 from pcdsdevices import mirror
-
-from ..mirror import (KBOMirror, OffsetMirror, PointingMirror,
-                      XOffsetMirrorStateCool, XOffsetMirrorXYState)
+from pcdsdevices.mirror import (KBOMirror, OffsetMirror, PointingMirror,
+                                XOffsetMirrorStateCool, XOffsetMirrorXYState)
 
 
 @pytest.fixture(scope='function')

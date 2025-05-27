@@ -11,11 +11,12 @@ from ophyd.signal import EpicsSignal, EpicsSignalRO, Signal
 from ophyd.sim import FakeEpicsSignal
 from ophyd.status import Status
 
-from .. import signal as signal_module
-from ..signal import (AggregateSignal, AvgSignal, MultiDerivedSignal,
-                      MultiDerivedSignalRO, PytmcSignal, ReadOnlyError,
-                      SignalEditMD, UnitConversionDerivedSignal)
-from ..type_hints import OphydDataType, SignalToValue
+from pcdsdevices import signal as signal_module
+from pcdsdevices.signal import (AggregateSignal, AvgSignal, MultiDerivedSignal,
+                                MultiDerivedSignalRO, PytmcSignal,
+                                ReadOnlyError, SignalEditMD,
+                                UnitConversionDerivedSignal)
+from pcdsdevices.type_hints import OphydDataType, SignalToValue
 
 logger = logging.getLogger(__name__)
 

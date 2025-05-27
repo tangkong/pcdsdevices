@@ -2,7 +2,7 @@ import logging
 
 import pytest
 
-from ..lic import LaserInCoupling
+from pcdsdevices.lic import LaserInCoupling
 
 logger = logging.getLogger(__name__)
 

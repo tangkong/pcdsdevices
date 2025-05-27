@@ -7,8 +7,9 @@ import pytest
 from ophyd.sim import make_fake_device
 from ophyd.status import wait as status_wait
 
-from ..attenuator import (AT1K2, AT1K4, AT2K2, AT2L0, MAX_FILTERS, AttBase,
-                          Attenuator, _att_classes)
+from pcdsdevices.attenuator import (AT1K2, AT1K4, AT2K2, AT2L0, MAX_FILTERS,
+                                    AttBase, Attenuator, _att_classes)
+
 from .conftest import wait_and_assert
 
 logger = logging.getLogger(__name__)
